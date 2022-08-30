@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="swiper.css">
+    <!-- Fade Effects -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Wedding Quartet</title>
+</head>
+
+<body>
+  <!-- Nav-Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light  fixed-top"  id="my-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="/Images/Wedding Quartet - Logo.png" alt="" height="70"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item ">
+              <a class="nav-link" aria-current="page" href="#acasa">Acasa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#despre">Despre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galerie">Galerie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+  <!-- Page Content -->
+  <main>
+
+    <!-- Header -->
+    <section class="main-section"  id="acasa">
+      <div class="header-image" id="header-image">
+        <img class="logo-header" id="logo-header" src="/Images/Wedding Quartet - Logo.png" alt="">
+        <div class="gradient"></div>
+      </div>
+    </section>
+      
+
+    <!-- Despre -->
+    <section class="main-section"  id="despre">
+      <div class="container despre">
+          <h1 class="text-center red">Despre</h1>
+          <P><span class="red"> Wedding Cvartet</span> a luat nastrere din dorinta de a oferi momente unice. Fiecare eveniment din viata noastra, fie ca este o nunta, un botez sau o festivitate devine cu adevarat o bucurie atunci cand este insotit de muzica buna! Primirea invitatilor este cartea de vizita a oricarui eveniment, iar calitatea trebuie sa se observe chiar de la intrare. Noi dam calitate evenimentului dumneavoastra prin prezenta si muzica buna. Va oferim in programul nostru muzica de film, muzica clasica, valsuri, tangouri si coveruri dupa melodii usoare foarte cunoscute. Contactati-ne cu toata increderea!</P>
+          <div class="echipa text-center red">
+              <div class="echipa-item"  >
+                  <img src="/Images/Ana.jpg" alt="">
+                  <h3>Ana</h3>
+              </div>
+              <div class="echipa-item"  >
+                  <img src="/Images/Aura.jpg" alt="">
+                  <h3>Aura</h3>
+              </div>
+              <div class="echipa-item"  >
+                  <img src="/Images/Claudia.jpg" alt="">
+                  <h3>Claudia</h3>
+              </div>
+              <div class="echipa-item"  >
+                  <img src="/Images/Gabriela.jpg" alt="">
+                  <h3>Gabriela</h3>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Galerie -->
+    <section class="main-section" id="galerie">
+    <div class="container galerie text-center">
+      <h1 class="text-center red">Galerie</h1>
+      <br>
+      <!-- Imagini -->
+      <h3>Imagini</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/Images/Image 1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/Images/Image 2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/Images/Image 3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/Images/Image 4.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <br>
+      <!-- Video -->
+      <h3>Video</h3>
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <video class="my-video" controls   loop  playsinline>
+              <source src="/Video/Video 1.mp4" type='video/mp4'>
+            </video>
+          </div>
+
+          <div class="swiper-slide">
+            <video class="my-video"  controls   loop  playsinline>
+              <source src="/Video/Video 2.mp4" type='video/mp4'>
+            </video>
+          </div>
+
+          <div class="swiper-slide">
+            <video class="my-video"  controls   loop  playsinline>
+              <source src="/Video/Video 3.mp4" type='video/mp4'>
+            </video>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+    </section>
+
+    <!-- Header -->
+    <section class="main-section"  id="contact">
+      <div class="container">
+        <h1 class="text-center red">Contact</h1>
+        <!-- Form-Contact -->
+        <form class="col-lg-8 mx-auto" form action="mail_handler.php" method="post">
+          <h4>Contacteaza-ne!</h4>
+          <div class="mb-3">
+            <input type="text" class="form-control" name="name"  placeholder="Nume" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" name="email"  placeholder="Email" required>
+            <div id="emailHelp" class="form-text">Nu dezvaluim email-ul dumneavoastra.</div>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" name="message"  rows="3" placeholder="Mesaj" required></textarea>
+          </div>
+          <div class="mb-3">
+            <button type="submit" class=" " name="submit">Trimite</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="footer-contact">
+        Suna: 0762621078
+      </div>
+      
+      <div class="copyright pt-3 pb-2">
+        <hr>
+        <p class="text-center">©2022 DAS-Design</p>
+      </div>
+    </footer>
+
+  </main>
+
+    
+    
+
+    
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- Fade Effects -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <!-- My JS -->
+  <script src="swiper.js"></script>
+  <script src="scroll.js"></script>
+</body>
+</html>
