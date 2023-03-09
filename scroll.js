@@ -59,3 +59,19 @@ window.onscroll = () => {
         };
     }); 
 }
+
+
+// Call Button
+
+let width = window.innerWidth;
+let callSmall = document.getElementById("call-small");
+let callLarge = document.getElementById("call-large");
+if (width < 991) {
+  callSmall.style.display = "block";
+  callLarge.style.display = "none";
+}
+else {
+  callSmall.style.display = "none";
+  callLarge.style.display = "block";
+}
+console.log(width)

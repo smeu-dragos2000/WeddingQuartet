@@ -9,9 +9,18 @@
     color: #BC3434 !important;
 }
 
+.main-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 .navbar {
     background-color: rgba(255, 255, 255, 0.5);
-    height: 70px;
+    height: 80px;
     backdrop-filter: blur(15px);
 }
 .navbar-brand img {
@@ -167,24 +176,35 @@ button {
     background-color: #BC3434;
     color: white;
     border: none;
+    font-family: 'Edu QLD Beginner', cursive; 
 }
 button:hover {
     background-color: #bc3434c4;
-
 }
 
 textarea {
     resize: none;
- }
+}
 
+#call-large {
+    color: #BC3434;
+    font-family: 'Edu QLD Beginner', cursive; 
+}
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #BC3434;
     color: white;
-    min-height: 300px;
+    /* min-height: 200px; */
+}
+.footer-contact {
+    height: 50px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .copyright {
@@ -203,15 +223,12 @@ hr {
 
 
 @media screen and (max-width: 991px) {
-    nav {
-        margin-bottom: 0;
-    }
     nav ul {
-    background-color: rgba(255, 255, 255, 0.9);
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+        margin-top: 0;
+        background-color: rgba(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 }
